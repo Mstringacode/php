@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo(a) ao my Bank, simulador de empréstimos</title>
+    <link rel="stylesheet" href="styleIndex.css">
+
+</head>
+<body>
+    
+    <main>
+        <h1>Bem-vindo(a) ao my Bank<br>SIMULADOR DE EMPRÉSTIMOS</h1>
+        <form action="simulador.php" method="POST">
+            <br>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="DIGITE SEU NOME"><br>
+            
+            <label for="cliente">Já é nosso cliente? </label> <!-- 0 - para falso / 1 - para verdadeiro -->
+            <select name="cliente">
+                <option value="0">Não</option>
+                <option value="1">Sim</option>
+            </select> <br>
+
+            <label for="serasa">Digite o seu SERASA SCORE: </label>
+            <input type="number" name="serasa" placeholder="1 - 1000"> <br>
+
+            <label for="emprestimo">Valor do Empréstimo: </label>
+            <input type="number" name="emprestimo" placeholder="VALOR DESEJADO"> <br>
+
+            <label for="parcelas">Parcelas: </label>
+            <select name="parcelas">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="28">28</option>
+                <option value="32">32</option>
+                <option value="36">36</option>
+                <option value="40">40</option>
+                <option value="44">44</option>
+                <option value="48">48</option>
+            </select> <br>
+
+            <label for="seguro">Desejo incluir um seguro desemprego no valor de R$49,90</label>
+            <select name="seguro">
+                <option value="0">Não</option>
+                <option value="1">Sim</option>
+            </select><br>
+
+            <input type="submit" name="Enviar">
+
+        </form>
+    </main>
+</body>
+</html>
